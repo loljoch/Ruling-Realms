@@ -7,11 +7,11 @@ public class Category : MonoBehaviour
     //names may change
     public enum categories
     {
-        None,
         One,
         Two,
         Three,
-        Four
+        Four,
+        None
     }
 
     public categories category = categories.None;

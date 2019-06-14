@@ -21,4 +21,25 @@ public class TestScript : MonoBehaviour
         GameManager.Instance.nextPlayer = GameManager.Instance.playerList[Random.Range(0, GameManager.Instance.playerList.Count)];
         GameManager.Instance.StartNextTurn();
     }
+
+    public void FakeFocusCastle()
+    {
+        BattleManager.Instance.GetCastlesFromPlayer(1);
+        BattleManager.Instance.FocusCastle(2);
+    }
+
+    public void FakeAttack(int attackValue)
+    {
+        BattleManager.Instance.Attack(2, attackValue, 1);
+    }
+
+    public void FakeAttackTwo(int attackValue)
+    {
+        BattleManager.Instance.Attack(3, attackValue, 1);
+    }
+
+    public void FakeStartBattle()
+    {
+        BattleManager.Instance.StartBattle();
+    }
 }
