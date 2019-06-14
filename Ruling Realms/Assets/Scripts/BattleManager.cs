@@ -24,6 +24,8 @@ public class BattleManager : MonoBehaviour
     }
 
     private List<PlayerAndValue> attackingPlayers;
+    private List<int> defendingPlayer;
+    private List<PlayerAndValue> amountOfJokerPlayedByPlayer;
     private Castle targetedCastle;
     private int targetedPlayer;
 
@@ -71,7 +73,21 @@ public class BattleManager : MonoBehaviour
     {
         int tempValue = ((int)targetedCastle.category == category) ? attackValue * 2 : attackValue;
         attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], attackValue));
+    }
 
+    public void Defend(int defendValue, int category)
+    {
+        int tempValue = ((int)targetedCastle.category == category) ? defendValue * 2 : defendValue;
+        defendingPlayer.Add(tempValue);
+    }
+
+    public void StartBattle()
+    {
+
+    }
+
+    private void SpawnArmies()
+    {
 
     }
 }
