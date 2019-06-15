@@ -61,3 +61,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810600e7231d48c488e0f714eac9590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireballParent: {fileID: 0}

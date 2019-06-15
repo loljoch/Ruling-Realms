@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Army : MonoBehaviour
 {
-    public List<AttackValue> bannerman, soldiers, thiefs, priests, ogres;
+    [SerializeField] private float marchTime;
     private int currentPositionTaken;
-    private Animator animator;
+    public Animator animator;
+    public List<AttackValue> jokers, bannerman, soldiers, thiefs, priests, ogres;
+    public List<AttackValue> activeArmy;
     public Vector3 originalPosition;
 
     private void Start()
@@ -20,6 +22,9 @@ public class Army : MonoBehaviour
         {
             switch (unit.attackValue)
             {
+                case -1:
+                    jokers.Add(unit);
+                    break;
                 case 0:
                     bannerman.Add(unit);
                     break;
@@ -43,10 +48,12 @@ public class Army : MonoBehaviour
         }
     }
 
-    public void SetArmyActive(List<AttackValue> soldierSort ,int amount)
+    public void SetArmyActive(List<AttackValue> soldierSort, int amount, bool attacking)
     {
         for (int i = 0; i < amount; i++)
         {
+            activeArmy.Add(soldierSort[currentPositionTaken]);
+            soldierSort[currentPositionTaken].attacking = attacking;
             soldierSort[currentPositionTaken++].gameObject.SetActive(true);
         }
     }
@@ -54,12 +61,35 @@ public class Army : MonoBehaviour
     public void Reveal()
     {
         animator.SetBool("Revealed", true);
+        StartCoroutine(SetRigidBodies(true));
     }
 
 
     public void SetBackToOriginalPosition()
     {
         transform.position = originalPosition;
+    }
+
+    IEnumerator SetRigidBodies(bool active)
+    {
+        yield return new WaitForSeconds(1);
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].GetComponent<Collider>().enabled = active;
+            activeArmy[i].GetComponent<Rigidbody>().useGravity = active;
+        }
+    }
+
+    public IEnumerator MarchArmy(Vector3 targetPosition)
+    {
+        Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
+
+        do
+        {
+            transform.position = Vector3.LerpUnclamped(transform.position, newTargetPosition, marchTime * Time.deltaTime);
+            yield return new WaitForFixedUpdate();
+        } while (Vector3.Distance(transform.position, newTargetPosition) > 2);
+        BattleManager.Instance.ArmyArrived();
     }
 
 }

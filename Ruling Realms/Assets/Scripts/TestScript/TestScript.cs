@@ -24,8 +24,8 @@ public class TestScript : MonoBehaviour
 
     public void FakeFocusCastle()
     {
-        BattleManager.Instance.GetCastlesFromPlayer(1);
-        BattleManager.Instance.FocusCastle(2);
+        BattleManager.Instance.GetCastlesFromPlayer(0);
+        BattleManager.Instance.FocusCastle(0);
     }
 
     public void FakeAttack(int attackValue)
@@ -36,6 +36,16 @@ public class TestScript : MonoBehaviour
     public void FakeAttackTwo(int attackValue)
     {
         BattleManager.Instance.Attack(3, attackValue, 1);
+    }
+
+    public void FakeAttackThree(int attackValue)
+    {
+        BattleManager.Instance.Attack(1, attackValue, 1);
+    }
+
+    public void FakeDefend(int defendValue)
+    {
+        BattleManager.Instance.Defend(defendValue, 1);
     }
 
     public void FakeStartBattle()
