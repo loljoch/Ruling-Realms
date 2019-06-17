@@ -56,12 +56,12 @@ public class GameManager : MonoBehaviour
         } else
         {
             UiManager.Instance.playersJoinedMenu.StartCountDown();
-            AssignCastlesToPlayers();
+            AssignItemsToPlayers();
         }
 
     }
 
-    private void AssignCastlesToPlayers()
+    private void AssignItemsToPlayers()
     {
         for (int i = 0; i < playerList.Count; i++)
         {
@@ -72,9 +72,13 @@ public class GameManager : MonoBehaviour
                 {
                     playerList[i].castleList.Add(tempItemArray[w].GetComponent<Castle>());
                     tempItemArray[w].GetComponent<Castle>().AssignCastle(playerList[i]);
-                } else
+                } else if(tempItemArray[w].CompareTag("CameraPosition"))
                 {
                     playerList[i].cameraView = tempItemArray[w];
+                } else if (tempItemArray[w].GetComponent<Army>())
+                {
+                    playerList[i].army = tempItemArray[w].GetComponent<Army>();
+                    break;
                 }
             }
         }

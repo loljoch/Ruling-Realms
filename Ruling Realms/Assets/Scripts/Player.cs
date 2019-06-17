@@ -10,6 +10,7 @@ public class Player
 
     public List<Castle> castleList;
     public Transform cameraView;
+    public Army army;
 
     public Player(Color playerColor, string playerName, int playerNumber)
     {
