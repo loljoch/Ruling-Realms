@@ -99,10 +99,13 @@ public class BattleManager : MonoBehaviour
                 int tempValue;
                 if (((int)targetedCastle.category == category))
                 {
-                    tempValue = attackValue * 2;
-                    if (tempValue == 0)
+                    if (attackValue != 1)
                     {
-                        attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], tempValue));
+                        tempValue = attackValue * 2;//
+                    } else
+                    {
+                        tempValue = attackValue;
+                        attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], attackValue));
                     }
                 } else
                 {
@@ -111,7 +114,7 @@ public class BattleManager : MonoBehaviour
                 attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], tempValue));
             } else
             {
-                attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], -1));
+                attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], 0));
                 PlayJoker(playerIndex);
             }
         } else
@@ -144,8 +147,15 @@ public class BattleManager : MonoBehaviour
 
     public void Defend(int defendValue, int category)
     {
-        int tempValue = ((int)targetedCastle.category == category) ? defendValue * 2 : defendValue;
-        defendingPlayer.Add(tempValue);
+        if (category != 4)
+        {
+            int tempValue = ((int)targetedCastle.category == category) ? defendValue * 2 : defendValue;
+            defendingPlayer.Add(tempValue);
+        } else
+        {
+            PlayJoker(targetedPlayer);
+            defendingPlayer.Add(defendValue);
+        }
     }
 
     public void StartBattle()
@@ -169,10 +179,10 @@ public class BattleManager : MonoBehaviour
 
         switch (playerAndValue.value)
         {
-            case -1:
+            case 0:
                 currentArmy.SetArmyActive(currentArmy.jokers, 1, true);
                 break;
-            case 0:
+            case 1:
                 currentArmy.SetArmyActive(currentArmy.bannerman, 1, true);
                 break;
             case 2:
@@ -204,10 +214,10 @@ public class BattleManager : MonoBehaviour
 
         switch (value)
         {
-            case -1:
+            case 0:
                 currentArmy.SetArmyActive(currentArmy.jokers, 1, false);
                 break;
-            case 0:
+            case 1:
                 currentArmy.SetArmyActive(currentArmy.bannerman, 1, false);
                 break;
             case 2:
@@ -345,7 +355,7 @@ public class BattleManager : MonoBehaviour
             }
             
         }
-
+        Debug.Log(playedIndexWhoPlayedJoker.Count);
         yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
         MarchArmies();
     }
