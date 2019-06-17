@@ -8,17 +8,21 @@ public class SmokeFight : MonoBehaviour
     private int attackingArmyValue;
     private List<AttackValue> attackingCollidedUnits;
     private List<AttackValue> defendingCollidedUnits;
+    private GameObject dustCloud;
 
     private void Start()
     {
         attackingCollidedUnits = new List<AttackValue>();
         defendingCollidedUnits = new List<AttackValue>();
+        dustCloud = GetComponentsInChildren<Transform>()[1].gameObject;
+        dustCloud.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         try
         {
+            dustCloud.SetActive(true);
             AttackValue currentCollision = other.gameObject.GetComponent<AttackValue>();
 
             if (currentCollision.attacking)

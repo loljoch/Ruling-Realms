@@ -297,6 +297,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5836853829309248075}
+  - component: {fileID: 44320389625481664}
+  - component: {fileID: 8740999111506686796}
   m_Layer: 0
   m_Name: Joker
   m_TagString: Untagged
@@ -313,12 +315,43 @@ Transform:
   m_GameObject: {fileID: 2296817915649561430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4118380638684480134}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44320389625481664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296817915649561430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54ac1ee6db48464c9d69d694c6a8ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackValue: -1
+  attacking: 0
+  growDivider: 0.1
+--- !u!54 &8740999111506686796
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296817915649561430}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2555715509122654203
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7794687895529862390}
   - component: {fileID: 6630176584666558834}
+  - component: {fileID: 1483701630687857858}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -709,6 +743,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.25903755, y: -0.010136932, z: 0.4146472}
     m_Extent: {x: 0.47764426, y: 0.40068927, z: 0.6404582}
   m_DirtyAABB: 0
+--- !u!136 &1483701630687857858
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948290357745324879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.52160347
+  m_Height: 1.3512831
+  m_Direction: 1
+  m_Center: {x: -0.013225726, y: 0.60146767, z: 0.26134193}
 --- !u!1 &6205825000623585640
 GameObject:
   m_ObjectHideFlags: 0

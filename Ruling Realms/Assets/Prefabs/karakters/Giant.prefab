@@ -163,7 +163,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115824557898625173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 7918f1cd2be15ac4dacd300c6342e504, type: 3}
   m_Controller: {fileID: 9100000, guid: 174c3d75fac08e74db48eac6016df7cf, type: 2}
   m_CullingMode: 1
@@ -216,6 +216,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5836853829309248075}
+  - component: {fileID: 7859242628176471947}
+  - component: {fileID: 1902748425055308300}
   m_Layer: 0
   m_Name: Giant
   m_TagString: Untagged
@@ -232,12 +234,42 @@ Transform:
   m_GameObject: {fileID: 2296817915649561430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4118380638684480134}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7859242628176471947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296817915649561430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9ab2d9b265eb24292ac068de308075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackValue: 10
+  attacking: 0
+--- !u!54 &1902748425055308300
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296817915649561430}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2586014130432881785
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7794687895529862390}
   - component: {fileID: 6630176584666558834}
+  - component: {fileID: 5197169829909018283}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -626,6 +659,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.25903755, y: -0.010136932, z: 0.4146472}
     m_Extent: {x: 0.47764426, y: 0.40068927, z: 0.6404582}
   m_DirtyAABB: 0
+--- !u!136 &5197169829909018283
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948290357745324879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30450067
+  m_Height: 1.3677485
+  m_Direction: 1
+  m_Center: {x: -0.013225771, y: 0.59323615, z: 0.044239044}
 --- !u!1 &6205825000623585640
 GameObject:
   m_ObjectHideFlags: 0

@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
                 } else if (tempItemArray[w].GetComponent<Army>())
                 {
                     playerList[i].army = tempItemArray[w].GetComponent<Army>();
+                    tempItemArray[w].GetComponent<Army>().fromPlayer = playerList[i].playerNumber;
                     break;
                 }
             }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1374787076376940009}
   - component: {fileID: 1374787076373515727}
   - component: {fileID: 1374787076374646543}
+  - component: {fileID: 8612992504628654898}
   m_Layer: 0
   m_Name: kasteel1
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8612992504628654898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374787076376580553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6af6cb82c103c45b34b7014c0387c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: 4
+  fromPlayer: 0

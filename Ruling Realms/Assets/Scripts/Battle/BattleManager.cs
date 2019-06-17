@@ -355,7 +355,6 @@ public class BattleManager : MonoBehaviour
             }
             
         }
-        Debug.Log(playedIndexWhoPlayedJoker.Count);
         yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
         MarchArmies();
     }

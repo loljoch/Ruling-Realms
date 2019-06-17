@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Army : MonoBehaviour
 {
+    public int fromPlayer;
     [SerializeField] private float marchTime;
     private int currentPositionTaken;
     public Animator animator;
@@ -43,9 +44,24 @@ public class Army : MonoBehaviour
                 default:
                     break;
             }
-
             unit.gameObject.SetActive(false);
         }
+    }
+
+    public void AssignArmy(Player player)
+    {
+        for (int i = 0; i < jokers.Count; i++)
+        {
+            jokers[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+            bannerman[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+            soldiers[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+            thiefs[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+            priests[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+            ogres[i].GetComponent<SkinnedMeshRenderer>().material.color = player.playerColor;
+
+        }
+
+        fromPlayer = player.playerNumber;
     }
 
     public void SetArmyActive(List<AttackValue> soldierSort, int amount, bool attacking)
@@ -54,7 +70,8 @@ public class Army : MonoBehaviour
         {
             activeArmy.Add(soldierSort[currentPositionTaken]);
             soldierSort[currentPositionTaken].attacking = attacking;
-            soldierSort[currentPositionTaken++].gameObject.SetActive(true);
+            soldierSort[currentPositionTaken].gameObject.SetActive(true);
+            soldierSort[currentPositionTaken++].GetComponentInChildren<SkinnedMeshRenderer>().material.color = GameManager.Instance.playerList[fromPlayer].playerColor;
         }
     }
 
@@ -75,7 +92,7 @@ public class Army : MonoBehaviour
         yield return new WaitForSeconds(1);
         for (int i = 0; i < activeArmy.Count; i++)
         {
-            activeArmy[i].GetComponent<Collider>().enabled = active;
+            activeArmy[i].GetComponentInChildren<Collider>().enabled = active;
             activeArmy[i].GetComponent<Rigidbody>().useGravity = active;
         }
     }
@@ -83,6 +100,11 @@ public class Army : MonoBehaviour
     public IEnumerator MarchArmy(Vector3 targetPosition)
     {
         Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].transform.LookAt(Vector3.zero);
+            activeArmy[i].GetComponentInChildren<Animator>().SetBool("Running", true);
+        }
 
         do
         {
