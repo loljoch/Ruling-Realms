@@ -277,21 +277,24 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
         {
-            int tempSize = GameManager.Instance.playerList[i].army.activeArmy.Count;
-            if(tempSize != 0)
+            if (i != targetedPlayer)
             {
-                try
+                int tempSize = GameManager.Instance.playerList[i].army.activeArmy.Count;
+                if (tempSize != 0)
                 {
-                    if (tempSize >= currentStrongestArmy.activeArmy.Count)
+                    try
                     {
+                        if (tempSize >= currentStrongestArmy.activeArmy.Count)
+                        {
+                            currentStrongestArmy = GameManager.Instance.playerList[i].army;
+                        }
+                    } catch (System.NullReferenceException)
+                    {
+
                         currentStrongestArmy = GameManager.Instance.playerList[i].army;
                     }
-                } catch (System.NullReferenceException)
-                {
 
-                    currentStrongestArmy = GameManager.Instance.playerList[i].army;
                 }
-                
             }
         }
 
@@ -321,6 +324,7 @@ public class BattleManager : MonoBehaviour
         {
             for (int i = 0; i < fireBalls; i++)
             {
+                defendingPlayer.Remove(7);
                 SendFireballDown(FindStrongestArmy());
                 yield return new WaitForSeconds(2);
             }
@@ -337,25 +341,28 @@ public class BattleManager : MonoBehaviour
                     break;
                 case 2:
                     UiManager.Instance.BroadCastMessage(GameManager.Instance.playerList[playedIndexWhoPlayedJoker[0]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName + " may now assign a value to their joker", 3f);
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName + " may now assign a value to their joker", 3f);
                     break;
                 case 3:
                     UiManager.Instance.BroadCastMessage(GameManager.Instance.playerList[playedIndexWhoPlayedJoker[0]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[2]].playerName + " may now assign a value to their joker", 3f);
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[2]].playerName + " may now assign a value to their joker", 3f);
                     break;
                 case 4:
                     UiManager.Instance.BroadCastMessage(GameManager.Instance.playerList[playedIndexWhoPlayedJoker[0]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[2]].playerName
-                        + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[3]].playerName + " may now assign a value to their joker", 3f);
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[1]].playerName
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[2]].playerName
+                        + " and " + GameManager.Instance.playerList[playedIndexWhoPlayedJoker[3]].playerName + " may now assign a value to their joker", 3f);
                     break;
                 default:
                     break;
             }
             
         }
+
         yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
+        yield return new WaitForSeconds(2);
+
         MarchArmies();
     }
 
