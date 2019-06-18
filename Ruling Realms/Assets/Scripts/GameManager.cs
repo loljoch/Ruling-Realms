@@ -125,6 +125,12 @@ public class GameManager : MonoBehaviour
         return tempArray;
     }
 
+    public void DestroyCastle(Castle castle)
+    {
+        playerList[castle.fromPlayer].castleList.Remove(castle);
+        castle.gameObject.SetActive(false);
+    }
+
     public void AssignCategory(int category)
     {
         //assigns castle category to a random current player

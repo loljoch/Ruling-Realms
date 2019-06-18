@@ -52,4 +52,14 @@ public class TestScript : MonoBehaviour
     {
         BattleManager.Instance.StartBattle();
     }
+
+    public void Automate()
+    {
+        FakeFocusCastle();
+        FakeAttack(Random.Range(1, 13));
+        FakeAttackTwo(Random.Range(1, 13));
+        FakeAttackThree(Random.Range(1, 13));
+        FakeDefend(Random.Range(1, 13));
+        FakeStartBattle();
+    }
 }

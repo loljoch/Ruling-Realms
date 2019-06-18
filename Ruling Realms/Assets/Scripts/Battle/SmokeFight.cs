@@ -80,6 +80,7 @@ public class SmokeFight : MonoBehaviour
     {
         if(defendingArmyValue <= 0 || attackingArmyValue <= 0)
         {
+            GetComponent<Collider>().enabled = false;
             StartCoroutine(WaitAtBattleEnd());
         }
     }
@@ -101,7 +102,7 @@ public class SmokeFight : MonoBehaviour
     IEnumerator WaitAtBattleEnd()
     {
         yield return new WaitForSeconds(2);
-        BattleManager.Instance.BattleEnd(attackersWon);
+        StartCoroutine(BattleManager.Instance.BattleEnd(attackersWon));
         SetDustcloud(false);
     }
 }

@@ -397,22 +397,38 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void BattleEnd(bool hasAttackersWon)
+    public IEnumerator BattleEnd(bool hasAttackersWon)
     {
         if (!hasAttackersWon)
         {
             UiManager.Instance.BroadCastMessage("The defender has won the battle and will now gain the turn", 2);
+            GameManager.Instance.nextPlayer = GameManager.Instance.playerList[targetedPlayer];
         } else
         {
             UiManager.Instance.BroadCastMessage("The attacking side has won the battle and " + GameManager.Instance.playerList[targetedPlayer].playerName + " has lost his castle!", 2);
+            GameManager.Instance.DestroyCastle(targetedCastle);
         }
 
+        GameManager.Instance.StartNextTurn();
+
         MarchArmies(false);
+
+        yield return new WaitForSeconds(1);
 
         List<Army> fightingArmies = GetFightingArmies();
         for (int i = 0; i < fightingArmies.Count; i++)
         {
             fightingArmies[i].MakeArmyLookAt(Camera.main.transform.position, "Cheering");
         }
+
+        FireworkMachine fireworkMachine = FindObjectOfType<FireworkMachine>();
+        List<Color32> playerColors = new List<Color32>();
+
+        for (int i = 0; i < fightingArmies.Count; i++)
+        {
+            playerColors.Add(GameManager.Instance.playerList[fightingArmies[i].fromPlayer].playerColor);
+        }
+
+        StartCoroutine(fireworkMachine.FireFireworks(playerColors));
     }
 }
