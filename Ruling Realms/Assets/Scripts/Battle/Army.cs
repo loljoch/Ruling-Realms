@@ -12,6 +12,7 @@ public class Army : MonoBehaviour
     public List<AttackValue> activeArmy;
     public Vector3 originalPosition;
     public IEnumerator marchArmy;
+    public bool isGettingFireballed;
     
 
     private void Start()
@@ -83,7 +84,6 @@ public class Army : MonoBehaviour
         StartCoroutine(SetRigidBodies(true));
     }
 
-
     public void SetBackToOriginalPosition()
     {
         transform.position = originalPosition;
@@ -114,11 +114,7 @@ public class Army : MonoBehaviour
     public IEnumerator MarchArmy(Vector3 targetPosition)
     {
         Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
-        for (int i = 0; i < activeArmy.Count; i++)
-        {
-            activeArmy[i].transform.LookAt(Vector3.zero);
-            activeArmy[i].GetComponentInChildren<Animator>().SetBool("Running", true);
-        }
+        MakeArmyLookAt(Vector3.zero, "Running");
 
         do
         {
@@ -127,4 +123,12 @@ public class Army : MonoBehaviour
         } while (Vector3.Distance(transform.position, newTargetPosition) > 2);
     }
 
+    public void MakeArmyLookAt(Vector3 positon, string animation)
+    {
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].transform.LookAt(positon);
+            activeArmy[i].GetComponentInChildren<Animator>().SetBool(animation, true);
+        }
+    }
 }

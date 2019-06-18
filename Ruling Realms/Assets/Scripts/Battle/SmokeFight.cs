@@ -51,11 +51,11 @@ public class SmokeFight : MonoBehaviour
     {
         List<List<AttackValue>> activeArmies = new List<List<AttackValue>>();
 
-        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+        for (int i = 0; i < BattleManager.Instance.GetFightingArmies().Count; i++)
         {
             if(GameManager.Instance.playerList[i].army.activeArmy.Count > 0)
             {
-                activeArmies.Add(GameManager.Instance.playerList[i].army.activeArmy);
+                activeArmies.Add(BattleManager.Instance.GetFightingArmies()[i].activeArmy);
             }
         }
 

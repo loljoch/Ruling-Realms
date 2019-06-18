@@ -65,25 +65,31 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public string[] GetPlayers()
+    public int[] GetPlayers()
     {
-        List<string> tempList = new List<string>();
+        List<int> tempList = new List<int>();
 
         for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
         {
             if (i != GameManager.Instance.currentPlayer.playerNumber)
             {
-                tempList.Add(GameManager.Instance.playerList[i].playerName);
+                tempList.Add(GameManager.Instance.playerList[i].playerNumber);
             }
         }
 
         return tempList.ToArray();
     }
 
-    public int GetCastlesFromPlayer(int playerIndex)
+    public int[] GetCastlesFromPlayer(int playerIndex)
     {
         targetedPlayer = playerIndex;
-        return GameManager.Instance.playerList[playerIndex].castleList.Count;
+        List<int> castleIndexes = new List<int>();
+        for (int i = 0; i < GameManager.Instance.playerList[playerIndex].castleList.Count; i++)
+        {
+            castleIndexes.Add(GameManager.Instance.playerList[playerIndex].castleList[i].castleIndex);
+            
+        }
+        return castleIndexes.ToArray();
     }
     
     public void FocusCastle(int castleIndex)
@@ -141,7 +147,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void PlayJoker(int playedIndex)
+    private void PlayJoker(int playedIndex)
     {
         playedIndexWhoPlayedJoker.Add(playedIndex);
     }
@@ -261,12 +267,13 @@ public class BattleManager : MonoBehaviour
 
     private void SendFireballDown(Army onArmy)
     {
+        onArmy.isGettingFireballed = true;
         for (int i = 0; i < fireballList.Count; i++)
         {
             if (!fireballList[i].enabled)
             {
-                fireballList[i].enabled = true;
                 fireballList[i].target = onArmy;
+                fireballList[i].enabled = true;
                 break;
             }
         }
@@ -276,23 +283,25 @@ public class BattleManager : MonoBehaviour
     {
         Army currentStrongestArmy = null;
 
-        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+        List<Army> fightingArmies = GetFightingArmies();
+
+        for (int i = 0; i < fightingArmies.Count; i++)
         {
-            if (i != targetedPlayer)
+            if (fightingArmies[i].fromPlayer != targetedPlayer)
             {
-                int tempSize = GameManager.Instance.playerList[i].army.activeArmy.Count;
+                int tempSize = fightingArmies[i].activeArmy.Count;
                 if (tempSize != 0)
                 {
                     try
                     {
-                        if (tempSize >= currentStrongestArmy.activeArmy.Count)
+                        if (tempSize >= currentStrongestArmy.activeArmy.Count && !fightingArmies[i].isGettingFireballed)
                         {
-                            currentStrongestArmy = GameManager.Instance.playerList[i].army;
+                            currentStrongestArmy = fightingArmies[i];
                         }
                     } catch (System.NullReferenceException)
                     {
 
-                        currentStrongestArmy = GameManager.Instance.playerList[i].army;
+                        currentStrongestArmy = fightingArmies[i];
                     }
 
                 }
@@ -302,7 +311,7 @@ public class BattleManager : MonoBehaviour
         return currentStrongestArmy;
     }
 
-    private List<Army> GetFightingArmies()
+    public List<Army> GetFightingArmies()
     {
         List<Army> fightingArmies = new List<Army>();
 
@@ -360,10 +369,13 @@ public class BattleManager : MonoBehaviour
             }
             
         }
-
-        yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
+        if (playedIndexWhoPlayedJoker.Count > 0)
+        {
+            yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
+            yield return new WaitForSeconds(2);
+        }
         smokeFight.CalculateWinner();
-        yield return new WaitForSeconds(2);
+
 
         MarchArmies(true);
     }
@@ -396,5 +408,11 @@ public class BattleManager : MonoBehaviour
         }
 
         MarchArmies(false);
+
+        List<Army> fightingArmies = GetFightingArmies();
+        for (int i = 0; i < fightingArmies.Count; i++)
+        {
+            fightingArmies[i].MakeArmyLookAt(Camera.main.transform.position, "Cheering");
+        }
     }
 }

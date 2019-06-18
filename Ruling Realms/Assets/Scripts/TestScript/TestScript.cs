@@ -8,7 +8,7 @@ public class TestScript : MonoBehaviour
 
     public void FakeJoinPlayer()
     {
-        GameManager.Instance.AssignPlayer(Random.Range(0, 255), Random.Range(0, 255), Random.Range(0, 255), names[Random.Range(0, names.Count)]);
+        GameManager.Instance.AssignPlayer(new Vector3(Random.Range(0, 255), Random.Range(0, 255), Random.Range(0, 255)), names[Random.Range(0, names.Count)]);
     }
 
     public void FakeNextPlayerTurn()
