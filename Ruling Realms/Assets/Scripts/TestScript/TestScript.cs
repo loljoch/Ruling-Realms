@@ -30,12 +30,12 @@ public class TestScript : MonoBehaviour
 
     public void FakeAttack(int attackValue)
     {
-        BattleManager.Instance.Attack(2, attackValue, 4);
+        BattleManager.Instance.Attack(2, attackValue, 1);
     }
 
     public void FakeAttackTwo(int attackValue)
     {
-        BattleManager.Instance.Attack(3, attackValue, 4);
+        BattleManager.Instance.Attack(3, attackValue, 1);
     }
 
     public void FakeAttackThree(int attackValue)

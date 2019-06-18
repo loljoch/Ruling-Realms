@@ -11,6 +11,8 @@ public class Army : MonoBehaviour
     public List<AttackValue> jokers, bannerman, soldiers, thiefs, priests, ogres;
     public List<AttackValue> activeArmy;
     public Vector3 originalPosition;
+    public IEnumerator marchArmy;
+    
 
     private void Start()
     {
@@ -97,6 +99,18 @@ public class Army : MonoBehaviour
         }
     }
 
+    public void StartMarching(bool moving, Vector3 targetPosition)
+    {
+        if (moving)
+        {
+            marchArmy = MarchArmy(targetPosition);
+            StartCoroutine(marchArmy);
+        } else
+        {
+            StopCoroutine(marchArmy);
+        }
+    }
+
     public IEnumerator MarchArmy(Vector3 targetPosition)
     {
         Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
@@ -111,7 +125,6 @@ public class Army : MonoBehaviour
             transform.position = Vector3.LerpUnclamped(transform.position, newTargetPosition, marchTime * Time.deltaTime);
             yield return new WaitForFixedUpdate();
         } while (Vector3.Distance(transform.position, newTargetPosition) > 2);
-        BattleManager.Instance.ArmyArrived();
     }
 
 }

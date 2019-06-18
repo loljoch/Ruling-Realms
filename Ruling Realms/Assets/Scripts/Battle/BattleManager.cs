@@ -35,6 +35,7 @@ public class BattleManager : MonoBehaviour
     private int arrivedArmies;
 
     [SerializeField] Transform fireballParent;
+    [SerializeField] SmokeFight smokeFight;
 
     private void Awake()
     {
@@ -265,7 +266,7 @@ public class BattleManager : MonoBehaviour
             if (!fireballList[i].enabled)
             {
                 fireballList[i].enabled = true;
-                fireballList[i].target = onArmy.transform.position;
+                fireballList[i].target = onArmy;
                 break;
             }
         }
@@ -361,33 +362,39 @@ public class BattleManager : MonoBehaviour
         }
 
         yield return new WaitUntil(() => playedIndexWhoPlayedJoker.Count <= 0);
+        smokeFight.CalculateWinner();
         yield return new WaitForSeconds(2);
 
-        MarchArmies();
+        MarchArmies(true);
     }
 
-    public void MarchArmies()
+    public void MarchArmies(bool moving)
     {
         List<Army> fightingArmies = GetFightingArmies();
 
         for (int i = 0; i < fightingArmies.Count; i++)
         {
-            StartCoroutine(fightingArmies[i].MarchArmy(Vector3.zero));
+            if (moving)
+            {
+                fightingArmies[i].StartMarching(true, Vector3.zero);
+            } else
+            {
+                fightingArmies[i].StartMarching(false, Vector3.zero);
+
+            }
         }
     }
 
-    public void ArmyArrived()
+    public void BattleEnd(bool hasAttackersWon)
     {
-        arrivedArmies++;
-        if(arrivedArmies >= GetFightingArmies().Count)
+        if (!hasAttackersWon)
         {
-            if (FindObjectOfType<SmokeFight>().HasTheDefenderWon())
-            {
-                UiManager.Instance.BroadCastMessage("The defender has won the battle and will now gain the turn", 2);
-            } else
-            {
-                UiManager.Instance.BroadCastMessage("The attacking side has won the battle and " + GameManager.Instance.playerList[targetedPlayer].playerName + " has lost his castle!", 2);
-            }
+            UiManager.Instance.BroadCastMessage("The defender has won the battle and will now gain the turn", 2);
+        } else
+        {
+            UiManager.Instance.BroadCastMessage("The attacking side has won the battle and " + GameManager.Instance.playerList[targetedPlayer].playerName + " has lost his castle!", 2);
         }
+
+        MarchArmies(false);
     }
 }

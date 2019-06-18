@@ -114,13 +114,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartNextTurn()
+    public int StartNextTurn()
     {
 
         currentPlayer = (currentPlayer == nextPlayer || nextPlayer == null)? CalculateNextPlayer() : nextPlayer;
         nextPlayer = currentPlayer;
         UiManager.Instance.BroadCastMessage(currentPlayer.playerName + " may rule their realm", 3, currentPlayer.playerColor);
         SetCameraToPlayer(currentPlayer.cameraView);
+        return currentPlayer.playerNumber;
     }
 
 }

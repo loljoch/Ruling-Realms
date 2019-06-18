@@ -228,7 +228,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 26
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -883,6 +883,11 @@ PrefabInstance:
       propertyPath: fireballParent
       value: 
       objectReference: {fileID: 2026991858}
+    - target: {fileID: 2429801315824474793, guid: eae1e8c39085c7e49b2c5a4804e79358,
+        type: 3}
+      propertyPath: smokeFight
+      value: 
+      objectReference: {fileID: 1257078421}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae1e8c39085c7e49b2c5a4804e79358, type: 3}
 --- !u!1001 &637016257
@@ -23682,7 +23687,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 0
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -24453,7 +24458,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -25126,6 +25131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaea81ccbb2764e47ae48ad18b65879b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackersWon: 0
 --- !u!1001 &1270766913
 PrefabInstance:
   m_ObjectHideFlags: 0

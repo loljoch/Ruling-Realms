@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 5836853829309248075}
   - component: {fileID: 7859242628176471947}
   - component: {fileID: 1902748425055308300}
+  - component: {fileID: 9026241557707158104}
   m_Layer: 0
   m_Name: Giant
   m_TagString: Untagged
@@ -270,6 +271,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!136 &9026241557707158104
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296817915649561430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.30450067
+  m_Height: 1.3677485
+  m_Direction: 1
+  m_Center: {x: -0.013225771, y: 0.59323615, z: 0.044239044}
 --- !u!1 &2586014130432881785
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7794687895529862390}
   - component: {fileID: 6630176584666558834}
-  - component: {fileID: 5197169829909018283}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -659,20 +673,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.25903755, y: -0.010136932, z: 0.4146472}
     m_Extent: {x: 0.47764426, y: 0.40068927, z: 0.6404582}
   m_DirtyAABB: 0
---- !u!136 &5197169829909018283
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5948290357745324879}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.30450067
-  m_Height: 1.3677485
-  m_Direction: 1
-  m_Center: {x: -0.013225771, y: 0.59323615, z: 0.044239044}
 --- !u!1 &6205825000623585640
 GameObject:
   m_ObjectHideFlags: 0
