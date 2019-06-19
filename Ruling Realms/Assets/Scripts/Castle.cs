@@ -5,12 +5,13 @@ using UnityEngine;
 public class Castle : Category
 {
     public int fromPlayer;
+    public int castleIndex;
 
-    public void AssignCastle(Player player)
+    public void AssignCastle(Player player, int castleIndex)
     {
-        //GetComponent<Renderer>().material.color = player.playerColor;
         ColorBuildings(player.playerColor);
         fromPlayer = player.playerNumber;
+        this.castleIndex = castleIndex;
     }
 
     private void ColorBuildings(Color32 color)

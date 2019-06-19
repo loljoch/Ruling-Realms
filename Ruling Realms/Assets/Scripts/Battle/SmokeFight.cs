@@ -4,83 +4,54 @@ using UnityEngine;
 
 public class SmokeFight : MonoBehaviour
 {
+    public bool attackersWon;
     private int defendingArmyValue;
     private int attackingArmyValue;
-    private List<AttackValue> attackingCollidedUnits;
-    private List<AttackValue> defendingCollidedUnits;
-    private GameObject dustCloud;
+    private ParticleSystem[] dustCloud;
 
     private void Start()
     {
-        attackingCollidedUnits = new List<AttackValue>();
-        defendingCollidedUnits = new List<AttackValue>();
-        dustCloud = GetComponentsInChildren<Transform>()[1].gameObject;
-        dustCloud.SetActive(false);
+        dustCloud = GetComponentsInChildren<ParticleSystem>();
+        SetDustcloud(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         try
         {
-            dustCloud.SetActive(true);
+            SetDustcloud(true);
             AttackValue currentCollision = other.gameObject.GetComponent<AttackValue>();
-
             if (currentCollision.attacking)
             {
-                attackingArmyValue += currentCollision.attackValue;
-                attackingCollidedUnits.Add(currentCollision);
-            } else if (!currentCollision.attacking)
+                attackingArmyValue -= currentCollision.attackValue != 0 ? currentCollision.attackValue : 1;
+                if (!attackersWon)
+                {
+                    currentCollision.gameObject.SetActive(false);
+                }
+            } else
             {
-                defendingArmyValue += currentCollision.attackValue;
-                defendingCollidedUnits.Add(currentCollision);
+                defendingArmyValue -= currentCollision.attackValue != 0 ? currentCollision.attackValue : 1;
+                if (attackersWon)
+                {
+                    currentCollision.gameObject.SetActive(false);
+                }
             }
-            currentCollision.gameObject.SetActive(CheckIfDisable(currentCollision.attacking));
+            CheckIfBattleIsOver();
+
         } catch (System.NullReferenceException)
         {
         }
     }
 
-    private bool CheckIfDisable(bool attacking)
-    {
-        if (defendingArmyValue != 0 || attackingArmyValue != 0)
-        {
-            switch (attacking)
-            {
-                case true:
-                    if (attackingArmyValue > defendingArmyValue)
-                    {
-                        return false;
-                    } else
-                    {
-                        return true;
-                    }
-                case false:
-                    if (defendingArmyValue >= attackingArmyValue)
-                    {
-                        return false;
-                    } else
-                    {
-                        return true;
-                    }
-                default:
-                    return false;
-            }
-        } else
-        {
-            return false;
-        }
-        
-    }
-
-    private void CalculateWinner()
+    public void CalculateWinner()
     {
         List<List<AttackValue>> activeArmies = new List<List<AttackValue>>();
 
-        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+        for (int i = 0; i < BattleManager.Instance.GetFightingArmies().Count; i++)
         {
             if(GameManager.Instance.playerList[i].army.activeArmy.Count > 0)
             {
-                activeArmies.Add(GameManager.Instance.playerList[i].army.activeArmy);
+                activeArmies.Add(BattleManager.Instance.GetFightingArmies()[i].activeArmy);
             }
         }
 
@@ -98,16 +69,36 @@ public class SmokeFight : MonoBehaviour
 
             }
         }
+        attackersWon = defendingArmyValue >= attackingArmyValue ? false : true;
     }
 
-    public bool HasTheDefenderWon()
+    private void CheckIfBattleIsOver()
     {
-        if(defendingArmyValue >= attackingArmyValue)
+        if(defendingArmyValue <= 0 || attackingArmyValue <= 0)
         {
-            return true;
-        } else
-        {
-            return false;
+            GetComponent<Collider>().enabled = false;
+            StartCoroutine(BattleManager.Instance.BattleEnd(attackersWon));
         }
+    }
+
+    public void SetDustcloud(bool active)
+    {
+        for (int i = 0; i < dustCloud.Length; i++)
+        {
+            if (active)
+            {
+                dustCloud[i].Play();
+            } else
+            {
+                dustCloud[i].Stop();
+            }
+        }
+    }
+
+    public void ResetValues()
+    {
+        GetComponent<Collider>().enabled = true;
+        attackingArmyValue = 0;
+        defendingArmyValue = 0;
     }
 }

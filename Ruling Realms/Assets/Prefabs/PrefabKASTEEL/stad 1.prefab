@@ -119,8 +119,8 @@ Transform:
   m_LocalPosition: {x: 15.54, y: 6.169, z: -19.16}
   m_LocalScale: {x: 0.11930924, y: 0.11930918, z: 0.11930924}
   m_Children:
-  - {fileID: 6404958995738198571}
   - {fileID: 5887274570539416535}
+  - {fileID: 6404958995738198571}
   - {fileID: 2303409254448996060}
   - {fileID: 5776718366450787269}
   - {fileID: 5473779870291520241}
@@ -602,6 +602,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,11 +677,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260033
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580649030798166 stripped
@@ -692,6 +692,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -747,11 +752,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969573685810446 stripped
@@ -767,6 +767,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -837,11 +842,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126002
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580649136384379 stripped
@@ -857,6 +857,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -927,11 +932,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085593
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (31)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829065884127 stripped
@@ -947,6 +947,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (57)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,11 +1022,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (57)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829067493444 stripped
@@ -1037,6 +1037,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1092,11 +1097,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969573648864104 stripped
@@ -1112,6 +1112,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1182,11 +1187,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829057992486 stripped
@@ -1202,6 +1202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1272,11 +1277,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126004
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580649104435274 stripped
@@ -1292,6 +1292,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1362,16 +1372,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584312063536 stripped
@@ -1387,6 +1387,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1457,11 +1462,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085526
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829112801457 stripped
@@ -1477,6 +1477,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (44)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1547,11 +1552,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (44)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829147545578 stripped
@@ -1567,6 +1567,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1637,11 +1642,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085526
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829123087879 stripped
@@ -1657,6 +1657,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1727,11 +1732,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400402
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584463616257 stripped
@@ -1747,6 +1747,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (64)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1817,11 +1822,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (64)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829126654752 stripped
@@ -1837,6 +1837,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1907,11 +1912,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085503
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (23)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829126928200 stripped
@@ -1927,6 +1927,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1997,11 +2002,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.12601
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648984291000 stripped
@@ -2017,6 +2017,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2087,11 +2092,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408552
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829183160896 stripped
@@ -2107,6 +2107,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2177,11 +2182,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.12601
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (22)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648993230558 stripped
@@ -2197,6 +2197,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2267,11 +2272,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584437351024 stripped
@@ -2287,6 +2287,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2357,11 +2362,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (28)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829238725521 stripped
@@ -2377,6 +2377,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2447,11 +2452,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126018
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580649341005856 stripped
@@ -2467,6 +2467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (62)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2537,11 +2542,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (62)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829263811287 stripped
@@ -2557,6 +2557,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2627,11 +2632,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829349435100 stripped
@@ -2647,6 +2647,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2717,11 +2722,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (25)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829346085541 stripped
@@ -2737,6 +2737,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2807,11 +2812,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (24)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829319565708 stripped
@@ -2827,6 +2827,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2896,11 +2901,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085593
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -3007,6 +3007,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (52)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3076,11 +3081,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085493
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (52)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -3187,6 +3187,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3257,11 +3262,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408552
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829480808265 stripped
@@ -3277,6 +3277,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (59)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3347,11 +3352,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (59)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829509154265 stripped
@@ -3367,6 +3367,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3437,11 +3442,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085593
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (16)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829492723740 stripped
@@ -3457,6 +3457,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3526,11 +3531,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.12601
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -3637,6 +3637,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (43)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3707,11 +3712,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085493
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (43)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829568536158 stripped
@@ -3727,6 +3727,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3797,11 +3802,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126001
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648493932799 stripped
@@ -3817,6 +3817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3872,11 +3877,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969574161616798 stripped
@@ -3892,6 +3892,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3962,11 +3967,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085593
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829614272200 stripped
@@ -3982,6 +3982,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4051,11 +4056,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.400401
-      objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
@@ -4162,6 +4162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4231,11 +4236,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.126005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -4342,6 +4342,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4412,11 +4417,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260023
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648565886649 stripped
@@ -4432,6 +4432,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4486,11 +4491,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
@@ -4597,6 +4597,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4667,11 +4672,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400402
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584821184306 stripped
@@ -4687,6 +4687,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4757,11 +4762,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085507
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829632473523 stripped
@@ -4777,6 +4777,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (51)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4847,11 +4852,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085536
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (51)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829670552659 stripped
@@ -4867,6 +4867,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6081510949214675528}
     m_Modifications:
+    - target: {fileID: 6053294511783315465, guid: d880c1410c230c744826ca5a31a5aa41,
+        type: 3}
+      propertyPath: m_Name
+      value: kasteel3
+      objectReference: {fileID: 0}
     - target: {fileID: 6053294511783482409, guid: d880c1410c230c744826ca5a31a5aa41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4922,11 +4927,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6053294511783315465, guid: d880c1410c230c744826ca5a31a5aa41,
-        type: 3}
-      propertyPath: m_Name
-      value: kasteel3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d880c1410c230c744826ca5a31a5aa41, type: 3}
 --- !u!4 &2303409254448996060 stripped
@@ -4942,6 +4942,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (75)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5012,11 +5017,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.40855
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (75)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829681078164 stripped
@@ -5032,6 +5032,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5102,11 +5107,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004006
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (18)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585038933634 stripped
@@ -5122,6 +5122,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5182,11 +5187,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.1096822
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969574062727110 stripped
@@ -5202,6 +5202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5272,11 +5277,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829740067175 stripped
@@ -5292,6 +5292,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5362,11 +5367,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085593
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (26)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829720031765 stripped
@@ -5382,6 +5382,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5437,11 +5442,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969574007238974 stripped
@@ -5457,6 +5457,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5527,11 +5532,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584981511565 stripped
@@ -5547,6 +5547,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5617,11 +5622,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126005
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648420871794 stripped
@@ -5637,6 +5637,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5707,11 +5712,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004016
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (20)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584960985720 stripped
@@ -5727,6 +5727,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (53)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5797,11 +5802,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085493
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (53)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829765018487 stripped
@@ -5817,6 +5817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (73)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5887,11 +5892,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.40855
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (73)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829793846783 stripped
@@ -5907,6 +5907,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5977,11 +5982,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408561
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829800533828 stripped
@@ -5997,6 +5997,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6081510949214675528}
     m_Modifications:
+    - target: {fileID: 2007975917316596050, guid: a4dd9cdc2f7add641be1a212959bb592,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_Poort
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007975917316596050, guid: a4dd9cdc2f7add641be1a212959bb592,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2007975917316898162, guid: a4dd9cdc2f7add641be1a212959bb592,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6067,16 +6077,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 9.290856
       objectReference: {fileID: 0}
-    - target: {fileID: 2007975917316596050, guid: a4dd9cdc2f7add641be1a212959bb592,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_Poort
-      objectReference: {fileID: 0}
-    - target: {fileID: 2007975917316596050, guid: a4dd9cdc2f7add641be1a212959bb592,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4dd9cdc2f7add641be1a212959bb592, type: 3}
 --- !u!4 &5776718366450787269 stripped
@@ -6092,6 +6092,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (49)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6162,11 +6167,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (49)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829880345202 stripped
@@ -6182,6 +6182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6252,11 +6257,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260023
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (24)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648851891958 stripped
@@ -6272,6 +6272,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (42)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6342,11 +6347,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085493
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (42)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829853840972 stripped
@@ -6362,6 +6362,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6417,11 +6422,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969573909468203 stripped
@@ -6437,6 +6437,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6507,11 +6512,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260033
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (23)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648844425729 stripped
@@ -6527,6 +6527,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (32)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6597,11 +6602,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085493
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (32)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829916964920 stripped
@@ -6617,6 +6617,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6687,11 +6692,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085526
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829890393926 stripped
@@ -6707,6 +6707,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6777,16 +6787,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584735250912 stripped
@@ -6802,6 +6802,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (76)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6872,11 +6877,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408548
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (76)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829926100367 stripped
@@ -6892,6 +6892,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (48)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6962,11 +6967,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085507
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (48)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829926405224 stripped
@@ -6982,6 +6982,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (25)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7052,11 +7057,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260014
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (25)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648653279067 stripped
@@ -7072,6 +7072,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7142,11 +7147,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (18)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829958603370 stripped
@@ -7162,6 +7162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7232,11 +7237,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260014
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (26)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648742143570 stripped
@@ -7252,6 +7252,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7322,11 +7327,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (21)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269584663906582 stripped
@@ -7342,6 +7342,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7412,11 +7417,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126004
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (28)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648726587664 stripped
@@ -7432,6 +7432,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (36)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7502,11 +7507,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408552
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (36)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802829997596965 stripped
@@ -7522,6 +7522,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (68)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7592,11 +7597,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085526
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (68)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830038583733 stripped
@@ -7612,6 +7612,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (58)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7681,11 +7686,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085507
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -7792,6 +7792,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (66)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7862,11 +7867,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (66)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830048553345 stripped
@@ -7882,6 +7882,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7937,11 +7942,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969573751162842 stripped
@@ -7957,6 +7957,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8027,11 +8032,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085503
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830021714386 stripped
@@ -8047,6 +8047,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8117,11 +8122,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260023
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648689087465 stripped
@@ -8137,6 +8137,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (60)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8207,11 +8212,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (60)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830078854303 stripped
@@ -8227,6 +8227,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (71)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8297,11 +8302,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (71)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830071974825 stripped
@@ -8317,6 +8317,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8387,11 +8392,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260047
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580647977507954 stripped
@@ -8407,6 +8407,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8462,11 +8467,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
 --- !u!4 &5389969574785288186 stripped
@@ -8482,6 +8482,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8552,11 +8557,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400402
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (15)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585426611731 stripped
@@ -8572,6 +8572,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (46)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8642,11 +8647,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (46)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830093691655 stripped
@@ -8662,6 +8662,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8732,11 +8737,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (13)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585344299675 stripped
@@ -8752,6 +8752,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8822,11 +8827,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (23)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585345954071 stripped
@@ -8842,6 +8842,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8911,11 +8916,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.1260085
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -9022,6 +9022,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9092,11 +9097,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (20)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830185817315 stripped
@@ -9112,6 +9112,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9182,11 +9187,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260033
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648008421427 stripped
@@ -9202,6 +9202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (50)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9272,11 +9277,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (50)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830157468347 stripped
@@ -9292,6 +9292,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9362,11 +9367,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585577973953 stripped
@@ -9382,6 +9382,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9452,11 +9457,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (29)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830228046700 stripped
@@ -9472,6 +9472,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9542,11 +9547,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400401
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585569555995 stripped
@@ -9562,6 +9562,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9632,11 +9637,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126001
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580647820582122 stripped
@@ -9652,6 +9652,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (38)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9721,11 +9726,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.408557
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -9832,6 +9832,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (35)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9902,11 +9907,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408554
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (35)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830271402099 stripped
@@ -9922,6 +9922,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9992,11 +9997,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (19)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830322102640 stripped
@@ -10012,6 +10012,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (65)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10082,11 +10087,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408554
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (65)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830296168647 stripped
@@ -10102,6 +10102,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (54)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10172,11 +10177,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (54)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830343003150 stripped
@@ -10192,6 +10192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10261,11 +10266,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.400402
-      objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
@@ -10462,6 +10462,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (47)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10532,11 +10537,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (47)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830407853107 stripped
@@ -10552,6 +10552,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (74)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10622,11 +10627,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (74)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830421290324 stripped
@@ -10642,6 +10642,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10712,11 +10717,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126018
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (20)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648311448670 stripped
@@ -10732,6 +10732,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (61)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10802,11 +10807,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085536
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (61)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830406245422 stripped
@@ -10822,6 +10822,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10892,11 +10897,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126004
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648131590319 stripped
@@ -10912,6 +10912,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10982,11 +10987,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126001
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648133118661 stripped
@@ -11002,6 +11002,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (72)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11072,11 +11077,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (72)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830465832981 stripped
@@ -11092,6 +11092,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11162,11 +11167,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.1260033
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (19)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580648121130586 stripped
@@ -11182,6 +11182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (41)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11251,11 +11256,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085536
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -11362,6 +11362,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11431,11 +11436,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.126004
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -11542,6 +11542,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11612,11 +11617,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400404
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (19)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585253810977 stripped
@@ -11632,6 +11632,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11702,11 +11707,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004025
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (17)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585234867706 stripped
@@ -11722,6 +11722,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11791,11 +11796,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.1260033
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -11902,6 +11902,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (63)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11972,11 +11977,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085493
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (63)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830678756552 stripped
@@ -11992,6 +11992,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12062,11 +12067,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585863939501 stripped
@@ -12082,6 +12082,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (69)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12152,11 +12157,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085503
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (69)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830671353722 stripped
@@ -12172,6 +12172,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (40)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12242,11 +12247,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408554
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (40)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830718879307 stripped
@@ -12262,6 +12262,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (34)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12332,11 +12337,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408554
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (34)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830719576277 stripped
@@ -12352,6 +12352,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (37)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12422,11 +12427,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408552
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (37)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830749016645 stripped
@@ -12442,6 +12442,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12512,11 +12517,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408551
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (30)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830781794512 stripped
@@ -12532,6 +12532,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12602,11 +12607,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.12601
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580647299275278 stripped
@@ -12622,6 +12622,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1776092719715945029}
     m_Modifications:
+    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_toren (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 88876888346461926, guid: 37cf2ef77cb80cc49a1dd12346056753,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12676,11 +12681,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88876888346696390, guid: 37cf2ef77cb80cc49a1dd12346056753,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_toren (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cf2ef77cb80cc49a1dd12346056753, type: 3}
@@ -12787,6 +12787,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12857,11 +12862,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (14)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830823894373 stripped
@@ -12877,6 +12877,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6081510949214675528}
     m_Modifications:
+    - target: {fileID: 1374787076376580553, guid: b83bdba5ea7f66d47b41d20534f1c448,
+        type: 3}
+      propertyPath: m_Name
+      value: kasteel2
+      objectReference: {fileID: 0}
     - target: {fileID: 1374787076376940009, guid: b83bdba5ea7f66d47b41d20534f1c448,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12915,7 +12920,7 @@ PrefabInstance:
     - target: {fileID: 1374787076376940009, guid: b83bdba5ea7f66d47b41d20534f1c448,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1374787076376940009, guid: b83bdba5ea7f66d47b41d20534f1c448,
         type: 3}
@@ -12947,11 +12952,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 20.733994
       objectReference: {fileID: 0}
-    - target: {fileID: 1374787076376580553, guid: b83bdba5ea7f66d47b41d20534f1c448,
-        type: 3}
-      propertyPath: m_Name
-      value: kasteel1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b83bdba5ea7f66d47b41d20534f1c448, type: 3}
 --- !u!4 &6404958995738198571 stripped
@@ -12967,6 +12967,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13037,11 +13042,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.126013
       objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
 --- !u!4 &6394580647396870471 stripped
@@ -13057,6 +13057,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13127,11 +13132,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408561
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830801620877 stripped
@@ -13147,6 +13147,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13217,11 +13222,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085507
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830860156036 stripped
@@ -13237,6 +13237,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13307,11 +13312,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085507
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830836912101 stripped
@@ -13327,6 +13327,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (45)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13397,11 +13402,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (45)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830866132254 stripped
@@ -13417,6 +13417,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13487,11 +13492,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.400402
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (14)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585661128036 stripped
@@ -13507,6 +13507,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13577,11 +13582,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004016
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585610481286 stripped
@@ -13597,6 +13597,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (55)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13667,11 +13672,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085574
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (55)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830953682681 stripped
@@ -13687,6 +13687,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_midden (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 1389599020740255385, guid: 004ddcdd9982c9e40aac47ee78fdee55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13756,11 +13761,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 7.125999
-      objectReference: {fileID: 0}
-    - target: {fileID: 1389599020740215481, guid: 004ddcdd9982c9e40aac47ee78fdee55,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_midden (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004ddcdd9982c9e40aac47ee78fdee55, type: 3}
@@ -13957,6 +13957,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (39)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14027,11 +14032,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408554
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (39)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830966995821 stripped
@@ -14047,6 +14047,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (67)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14117,11 +14122,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.408557
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (67)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830967736060 stripped
@@ -14137,6 +14137,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14207,11 +14212,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085503
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (22)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802830973368069 stripped
@@ -14227,6 +14227,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6081510949214675528}
     m_Modifications:
+    - target: {fileID: 1892928898575774592, guid: 4b9564a3ea56a8549be4974af933c46d,
+        type: 3}
+      propertyPath: m_Name
+      value: kasteel1
+      objectReference: {fileID: 0}
     - target: {fileID: 1892928898575478688, guid: 4b9564a3ea56a8549be4974af933c46d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14265,7 +14270,7 @@ PrefabInstance:
     - target: {fileID: 1892928898575478688, guid: 4b9564a3ea56a8549be4974af933c46d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892928898575478688, guid: 4b9564a3ea56a8549be4974af933c46d,
         type: 3}
@@ -14297,11 +14302,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 21.392988
       objectReference: {fileID: 0}
-    - target: {fileID: 1892928898575774592, guid: 4b9564a3ea56a8549be4974af933c46d,
-        type: 3}
-      propertyPath: m_Name
-      value: kasteel2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b9564a3ea56a8549be4974af933c46d, type: 3}
 --- !u!4 &5887274570539416535 stripped
@@ -14317,6 +14317,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (56)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14387,11 +14392,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085555
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (56)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802831048023469 stripped
@@ -14407,6 +14407,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307328495923687801}
     m_Modifications:
+    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall_muur (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7109722215276751023, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14477,11 +14482,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.4004
       objectReference: {fileID: 0}
-    - target: {fileID: 7109722215276459151, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33,
-        type: 3}
-      propertyPath: m_Name
-      value: Wall_muur (12)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f2fe2c0bddb9a4ab363c0326fe3b33, type: 3}
 --- !u!4 &2980269585854634119 stripped
@@ -14497,6 +14497,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (70)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14567,11 +14572,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.4085503
       objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (70)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
 --- !u!4 &660802831030644859 stripped
@@ -14587,6 +14587,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14656,11 +14661,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085503
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}
@@ -14767,6 +14767,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5129159779420301538}
     m_Modifications:
+    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
+        type: 3}
+      propertyPath: m_Name
+      value: Huis_Klein (33)
+      objectReference: {fileID: 0}
     - target: {fileID: 4818114267091968582, guid: f60fe9d95eae335429faaa120db46c72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14836,11 +14841,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.4085493
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818114267092205158, guid: f60fe9d95eae335429faaa120db46c72,
-        type: 3}
-      propertyPath: m_Name
-      value: Huis_Klein (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60fe9d95eae335429faaa120db46c72, type: 3}

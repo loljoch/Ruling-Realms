@@ -11,6 +11,9 @@ public class Army : MonoBehaviour
     public List<AttackValue> jokers, bannerman, soldiers, thiefs, priests, ogres;
     public List<AttackValue> activeArmy;
     public Vector3 originalPosition;
+    public IEnumerator marchArmy;
+    public bool isGettingFireballed;
+    
 
     private void Start()
     {
@@ -75,21 +78,57 @@ public class Army : MonoBehaviour
         }
     }
 
+    public int GetArmyStrength()
+    {
+        int armyStrength = 0;
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            armyStrength += activeArmy[i].attackValue;
+        }
+
+        return armyStrength;
+    }
+
     public void Reveal()
     {
         animator.SetBool("Revealed", true);
         StartCoroutine(SetRigidBodies(true));
     }
 
+    public IEnumerator Reset()
+    {
+        ActivateRigidbodies(false);
+        animator.SetBool("Revealed", false);
+        yield return new WaitForSeconds(3);
+        SetBackToOriginalPosition();
+        yield return new WaitForSeconds(0.5f);
+        isGettingFireballed = false;
+        activeArmy.Clear();
+        currentPositionTaken = 0;
+    }
 
-    public void SetBackToOriginalPosition()
+    private void SetBackToOriginalPosition()
     {
         transform.position = originalPosition;
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].transform.position = activeArmy[i].transform.parent.position;
+            if (activeArmy[i].GetComponent<Joker>())
+            {
+                activeArmy[i].GetComponent<Joker>().attackValue = -1;
+            }
+            activeArmy[i].gameObject.SetActive(false);
+        }
     }
 
     IEnumerator SetRigidBodies(bool active)
     {
         yield return new WaitForSeconds(1);
+        ActivateRigidbodies(active);
+    }
+
+    private void ActivateRigidbodies(bool active)
+    {
         for (int i = 0; i < activeArmy.Count; i++)
         {
             activeArmy[i].GetComponentInChildren<Collider>().enabled = active;
@@ -97,21 +136,36 @@ public class Army : MonoBehaviour
         }
     }
 
+    public void StartMarching(bool moving, Vector3 targetPosition)
+    {
+        if (moving)
+        {
+            marchArmy = MarchArmy(targetPosition);
+            StartCoroutine(marchArmy);
+        } else
+        {
+            StopCoroutine(marchArmy);
+        }
+    }
+
     public IEnumerator MarchArmy(Vector3 targetPosition)
     {
         Vector3 newTargetPosition = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
-        for (int i = 0; i < activeArmy.Count; i++)
-        {
-            activeArmy[i].transform.LookAt(Vector3.zero);
-            activeArmy[i].GetComponentInChildren<Animator>().SetBool("Running", true);
-        }
+        MakeArmyLookAt(Vector3.zero, "Running");
 
         do
         {
             transform.position = Vector3.LerpUnclamped(transform.position, newTargetPosition, marchTime * Time.deltaTime);
             yield return new WaitForFixedUpdate();
         } while (Vector3.Distance(transform.position, newTargetPosition) > 2);
-        BattleManager.Instance.ArmyArrived();
     }
 
+    public void MakeArmyLookAt(Vector3 positon, string animation)
+    {
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].transform.LookAt(positon);
+            activeArmy[i].GetComponentInChildren<Animator>().SetBool(animation, true);
+        }
+    }
 }

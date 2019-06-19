@@ -42,11 +42,11 @@ public class GameManager : MonoBehaviour
         camera = Camera.main.GetComponent<CameraView>();
     }
 
-    public void AssignPlayer(float r, float g, float b, string playerName)
+    public void AssignPlayer(Vector3 rgb, string playerName)
     {
         if (playerList.Count < maxPlayers)
         {
-            Color32 tempPlayerColor = new Color32((byte)r, (byte)g, (byte)b, 255);
+            Color32 tempPlayerColor = new Color32((byte)rgb.x, (byte)rgb.y, (byte)rgb.z, 255);
             playerList.Add(new Player(tempPlayerColor, playerName, playerList.Count));
 
             if (UiManager.Instance.playersJoinedMenu.gameObject.activeSelf)
@@ -65,13 +65,14 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < playerList.Count; i++)
         {
+            int castleIndex = 0;
             Transform[] tempItemArray = playerItemList[i].GetComponentsInChildren<Transform>();
             for (int w = 0; w < tempItemArray.Length; w++)
             {
                 if (tempItemArray[w].GetComponent<Castle>())
                 {
                     playerList[i].castleList.Add(tempItemArray[w].GetComponent<Castle>());
-                    tempItemArray[w].GetComponent<Castle>().AssignCastle(playerList[i]);
+                    tempItemArray[w].GetComponent<Castle>().AssignCastle(playerList[i], castleIndex++);
                 } else if(tempItemArray[w].CompareTag("CameraPosition"))
                 {
                     playerList[i].cameraView = tempItemArray[w];
@@ -114,13 +115,34 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartNextTurn()
+    public int[] StartNextTurn(int cardDrawNumber = 1)
     {
-
         currentPlayer = (currentPlayer == nextPlayer || nextPlayer == null)? CalculateNextPlayer() : nextPlayer;
         nextPlayer = currentPlayer;
         UiManager.Instance.BroadCastMessage(currentPlayer.playerName + " may rule their realm", 3, currentPlayer.playerColor);
         SetCameraToPlayer(currentPlayer.cameraView);
+        int[] tempArray = new int[] {currentPlayer.playerNumber, cardDrawNumber };
+        return tempArray;
+    }
+
+    public void DestroyCastle(Castle castle)
+    {
+        playerList[castle.fromPlayer].castleList.Remove(castle);
+        castle.gameObject.SetActive(false);
+        if(playerList[castle.fromPlayer].castleList.Count <= 0)
+        {
+            DestroyPlayer(playerList[castle.fromPlayer]);
+        }
+    }
+
+    public void DestroyPlayer(Player player)
+    {
+        playerList.Remove(player);
+    }
+
+    public void AssignCategory(int category)
+    {
+        //assigns castle category to a random current player
     }
 
 }

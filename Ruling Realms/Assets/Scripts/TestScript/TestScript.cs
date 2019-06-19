@@ -8,7 +8,7 @@ public class TestScript : MonoBehaviour
 
     public void FakeJoinPlayer()
     {
-        GameManager.Instance.AssignPlayer(Random.Range(0, 255), Random.Range(0, 255), Random.Range(0, 255), names[Random.Range(0, names.Count)]);
+        GameManager.Instance.AssignPlayer(new Vector3(Random.Range(0, 255), Random.Range(0, 255), Random.Range(0, 255)), names[Random.Range(0, names.Count)]);
     }
 
     public void FakeNextPlayerTurn()
@@ -30,12 +30,12 @@ public class TestScript : MonoBehaviour
 
     public void FakeAttack(int attackValue)
     {
-        BattleManager.Instance.Attack(2, attackValue, 4);
+        BattleManager.Instance.Attack(2, attackValue, 1);
     }
 
     public void FakeAttackTwo(int attackValue)
     {
-        BattleManager.Instance.Attack(3, attackValue, 4);
+        BattleManager.Instance.Attack(3, attackValue, 1);
     }
 
     public void FakeAttackThree(int attackValue)
@@ -51,5 +51,15 @@ public class TestScript : MonoBehaviour
     public void FakeStartBattle()
     {
         BattleManager.Instance.StartBattle();
+    }
+
+    public void Automate()
+    {
+        FakeFocusCastle();
+        FakeAttack(Random.Range(1, 13));
+        FakeAttackTwo(Random.Range(1, 13));
+        FakeAttackThree(Random.Range(1, 13));
+        FakeDefend(Random.Range(1, 13));
+        FakeStartBattle();
     }
 }
