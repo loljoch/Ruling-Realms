@@ -42,6 +42,7 @@ public class Fireball : MonoBehaviour
                 target.activeArmy[i].gameObject.SetActive(false);
             }
             target.activeArmy.Clear();
+            StartCoroutine(target.Reset());
         }
     }
 

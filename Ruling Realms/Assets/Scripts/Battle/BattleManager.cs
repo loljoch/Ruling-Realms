@@ -254,13 +254,20 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private void RevealArmies()
+    private void RevealArmies(bool active)
     {
         List<Army> fightingArmies = GetFightingArmies();
 
         for (int i = 0; i < fightingArmies.Count; i++)
         {
-            fightingArmies[i].Reveal();
+            if (active)
+            {
+                fightingArmies[i].Reveal();
+            } else
+            {
+                StartCoroutine(fightingArmies[i].Reset());
+               
+            }
         }
         
     }
@@ -289,12 +296,12 @@ public class BattleManager : MonoBehaviour
         {
             if (fightingArmies[i].fromPlayer != targetedPlayer)
             {
-                int tempSize = fightingArmies[i].activeArmy.Count;
+                int tempSize = fightingArmies[i].GetArmyStrength();
                 if (tempSize != 0)
                 {
                     try
                     {
-                        if (tempSize >= currentStrongestArmy.activeArmy.Count && !fightingArmies[i].isGettingFireballed)
+                        if (tempSize >= currentStrongestArmy.GetArmyStrength() && !fightingArmies[i].isGettingFireballed)
                         {
                             currentStrongestArmy = fightingArmies[i];
                         }
@@ -328,7 +335,7 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator Battle()
     {
-        RevealArmies();
+        RevealArmies(true);
         yield return new WaitForSeconds(2);
         if (fireBalls > 0)
         {
@@ -399,6 +406,7 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator BattleEnd(bool hasAttackersWon)
     {
+        yield return new WaitForSeconds(2);
         if (!hasAttackersWon)
         {
             UiManager.Instance.BroadCastMessage("The defender has won the battle and will now gain the turn", 2);
@@ -413,13 +421,15 @@ public class BattleManager : MonoBehaviour
 
         MarchArmies(false);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         List<Army> fightingArmies = GetFightingArmies();
         for (int i = 0; i < fightingArmies.Count; i++)
         {
             fightingArmies[i].MakeArmyLookAt(Camera.main.transform.position, "Cheering");
         }
+
+        smokeFight.SetDustcloud(false);
 
         FireworkMachine fireworkMachine = FindObjectOfType<FireworkMachine>();
         List<Color32> playerColors = new List<Color32>();
@@ -430,5 +440,23 @@ public class BattleManager : MonoBehaviour
         }
 
         StartCoroutine(fireworkMachine.FireFireworks(playerColors));
+        yield return new WaitForSeconds(3);
+
+        RevealArmies(false);
+        ResetValues();
+        yield return new WaitForSeconds(1);
+        smokeFight.ResetValues();
+    }
+
+    private void ResetValues()
+    {
+        attackingPlayers.Clear();
+        defendingPlayer.Clear();
+        playedIndexWhoPlayedJoker.Clear();
+        targetedCastle = null;
+        targetedPlayer = 6;
+        fireBalls = 0;
+        jokerMode = false;
+        arrivedArmies = 0;
     }
 }

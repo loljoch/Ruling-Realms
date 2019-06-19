@@ -78,20 +78,57 @@ public class Army : MonoBehaviour
         }
     }
 
+    public int GetArmyStrength()
+    {
+        int armyStrength = 0;
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            armyStrength += activeArmy[i].attackValue;
+        }
+
+        return armyStrength;
+    }
+
     public void Reveal()
     {
         animator.SetBool("Revealed", true);
         StartCoroutine(SetRigidBodies(true));
     }
 
-    public void SetBackToOriginalPosition()
+    public IEnumerator Reset()
+    {
+        ActivateRigidbodies(false);
+        animator.SetBool("Revealed", false);
+        yield return new WaitForSeconds(3);
+        SetBackToOriginalPosition();
+        yield return new WaitForSeconds(0.5f);
+        isGettingFireballed = false;
+        activeArmy.Clear();
+        currentPositionTaken = 0;
+    }
+
+    private void SetBackToOriginalPosition()
     {
         transform.position = originalPosition;
+        for (int i = 0; i < activeArmy.Count; i++)
+        {
+            activeArmy[i].transform.position = activeArmy[i].transform.parent.position;
+            if (activeArmy[i].GetComponent<Joker>())
+            {
+                activeArmy[i].GetComponent<Joker>().attackValue = -1;
+            }
+            activeArmy[i].gameObject.SetActive(false);
+        }
     }
 
     IEnumerator SetRigidBodies(bool active)
     {
         yield return new WaitForSeconds(1);
+        ActivateRigidbodies(active);
+    }
+
+    private void ActivateRigidbodies(bool active)
+    {
         for (int i = 0; i < activeArmy.Count; i++)
         {
             activeArmy[i].GetComponentInChildren<Collider>().enabled = active;

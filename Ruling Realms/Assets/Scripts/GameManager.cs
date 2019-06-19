@@ -129,6 +129,15 @@ public class GameManager : MonoBehaviour
     {
         playerList[castle.fromPlayer].castleList.Remove(castle);
         castle.gameObject.SetActive(false);
+        if(playerList[castle.fromPlayer].castleList.Count <= 0)
+        {
+            DestroyPlayer(playerList[castle.fromPlayer]);
+        }
+    }
+
+    public void DestroyPlayer(Player player)
+    {
+        playerList.Remove(player);
     }
 
     public void AssignCategory(int category)

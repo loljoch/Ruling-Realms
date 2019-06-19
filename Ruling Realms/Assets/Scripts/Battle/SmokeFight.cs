@@ -7,14 +7,10 @@ public class SmokeFight : MonoBehaviour
     public bool attackersWon;
     private int defendingArmyValue;
     private int attackingArmyValue;
-    private List<AttackValue> attackingCollidedUnits;
-    private List<AttackValue> defendingCollidedUnits;
     private ParticleSystem[] dustCloud;
 
     private void Start()
     {
-        attackingCollidedUnits = new List<AttackValue>();
-        defendingCollidedUnits = new List<AttackValue>();
         dustCloud = GetComponentsInChildren<ParticleSystem>();
         SetDustcloud(false);
     }
@@ -81,11 +77,11 @@ public class SmokeFight : MonoBehaviour
         if(defendingArmyValue <= 0 || attackingArmyValue <= 0)
         {
             GetComponent<Collider>().enabled = false;
-            StartCoroutine(WaitAtBattleEnd());
+            StartCoroutine(BattleManager.Instance.BattleEnd(attackersWon));
         }
     }
 
-    private void SetDustcloud(bool active)
+    public void SetDustcloud(bool active)
     {
         for (int i = 0; i < dustCloud.Length; i++)
         {
@@ -99,10 +95,10 @@ public class SmokeFight : MonoBehaviour
         }
     }
 
-    IEnumerator WaitAtBattleEnd()
+    public void ResetValues()
     {
-        yield return new WaitForSeconds(2);
-        StartCoroutine(BattleManager.Instance.BattleEnd(attackersWon));
-        SetDustcloud(false);
+        GetComponent<Collider>().enabled = true;
+        attackingArmyValue = 0;
+        defendingArmyValue = 0;
     }
 }
