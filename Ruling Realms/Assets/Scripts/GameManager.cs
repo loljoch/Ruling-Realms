@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     public void AssignPlayer(Vector3 rgb, string playerName)
     {
+
         if (playerList.Count < maxPlayers)
         {
             Color32 tempPlayerColor = new Color32((byte)rgb.x, (byte)rgb.y, (byte)rgb.z, 255);
@@ -60,6 +61,27 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    //public void AssignPlayer(string data)
+    //{
+    //    var jsonClass = JsonUtility.FromJson<JsonClass>(data);
+
+    //    if (playerList.Count < maxPlayers)
+    //    {
+    //        Color32 tempPlayerColor = new Color32((byte)jsonClass.rgb[0], (byte)jsonClass.rgb[1], (byte)jsonClass.rgb[2], 255);
+    //        playerList.Add(new Player(tempPlayerColor, jsonClass.playerName, playerList.Count));
+
+    //        if (UiManager.Instance.playersJoinedMenu.gameObject.activeSelf)
+    //        {
+    //            UiManager.Instance.playersJoinedMenu.ShowJoinedPlayers();
+    //        }
+    //    } else
+    //    {
+    //        UiManager.Instance.playersJoinedMenu.StartCountDown();
+    //        AssignItemsToPlayers();
+    //    }
+
+    //}
 
     private void AssignItemsToPlayers()
     {
@@ -108,7 +130,7 @@ public class GameManager : MonoBehaviour
 
         try
         {
-            return playerList[currentPlayer.playerNumber + 1];
+            return playerList[playerList.IndexOf(currentPlayer) + 1];
         } catch (System.Exception)
         {
             return playerList[0];
@@ -128,16 +150,23 @@ public class GameManager : MonoBehaviour
     public void DestroyCastle(Castle castle)
     {
         playerList[castle.fromPlayer].castleList.Remove(castle);
-        castle.gameObject.SetActive(false);
+        StartCoroutine(castle.Implode());
         if(playerList[castle.fromPlayer].castleList.Count <= 0)
         {
-            DestroyPlayer(playerList[castle.fromPlayer]);
+            StartCoroutine(DestroyPlayer(playerList[castle.fromPlayer]));
         }
     }
 
-    public void DestroyPlayer(Player player)
+    private IEnumerator DestroyPlayer(Player player)
     {
+        yield return new WaitForSeconds(6);
+        if (currentPlayer == player)
+        {
+            StartNextTurn();
+        }
+        Debug.Log(playerList.Count);
         playerList.Remove(player);
+        Debug.Log(playerList.Count);
     }
 
     public void AssignCategory(int category)

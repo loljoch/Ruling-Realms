@@ -45,30 +45,20 @@ public class SmokeFight : MonoBehaviour
 
     public void CalculateWinner()
     {
-        List<List<AttackValue>> activeArmies = new List<List<AttackValue>>();
+        List<Army> fightingArmies = BattleManager.Instance.GetFightingArmies();
 
-        for (int i = 0; i < BattleManager.Instance.GetFightingArmies().Count; i++)
+
+        for (int i = 0; i < fightingArmies.Count; i++)
         {
-            if(GameManager.Instance.playerList[i].army.activeArmy.Count > 0)
+            if (fightingArmies[i].activeArmy[0].attacking)
             {
-                activeArmies.Add(BattleManager.Instance.GetFightingArmies()[i].activeArmy);
+                attackingArmyValue += fightingArmies[i].GetArmyStrength();
+            } else if (fightingArmies[i].activeArmy[0].attacking)
+            {
+                defendingArmyValue += fightingArmies[i].GetArmyStrength();
             }
         }
 
-        for (int i = 0; i < activeArmies.Count; i++)
-        {
-            for (int w = 0; w < activeArmies[i].Count; w++)
-            {
-                if (activeArmies[i][w].attacking)
-                {
-                    attackingArmyValue += activeArmies[i][w].attackValue;
-                } else
-                {
-                    defendingArmyValue += activeArmies[i][w].attackValue;
-                }
-
-            }
-        }
         attackersWon = defendingArmyValue >= attackingArmyValue ? false : true;
     }
 

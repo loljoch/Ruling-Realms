@@ -59,7 +59,7 @@ public class TestScript : MonoBehaviour
         FakeAttack(Random.Range(1, 13));
         FakeAttackTwo(Random.Range(1, 13));
         FakeAttackThree(Random.Range(1, 13));
-        FakeDefend(Random.Range(1, 13));
+        FakeDefend(7);
         FakeStartBattle();
     }
 }

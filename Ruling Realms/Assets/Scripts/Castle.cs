@@ -6,6 +6,7 @@ public class Castle : Category
 {
     public int fromPlayer;
     public int castleIndex;
+    [SerializeField] private float implodePower;
 
     public void AssignCastle(Player player, int castleIndex)
     {
@@ -26,6 +27,22 @@ public class Castle : Category
                     buildings[i].materials[w].color = color;
                 }
             }
+        }
+    }
+
+    public IEnumerator Implode()
+    {
+        Rigidbody[] shards = GetComponentsInChildren<Rigidbody>();
+        for (int i = 0; i < shards.Length; i++)
+        {
+            shards[i].velocity = new Vector3(Random.Range(-3f, 3f), Random.Range(-4f, 4), Random.Range(-4f, 4f));
+            shards[i].velocity *= implodePower;
+        }
+
+        yield return new WaitForSeconds(implodePower);
+        for (int i = 0; i < shards.Length; i++)
+        {
+            shards[i].gameObject.SetActive(false);
         }
     }
 }

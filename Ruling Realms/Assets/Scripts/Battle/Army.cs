@@ -84,6 +84,10 @@ public class Army : MonoBehaviour
         for (int i = 0; i < activeArmy.Count; i++)
         {
             armyStrength += activeArmy[i].attackValue;
+            if (activeArmy[i].attackValue == 0)
+            {
+                armyStrength++;
+            }
         }
 
         return armyStrength;

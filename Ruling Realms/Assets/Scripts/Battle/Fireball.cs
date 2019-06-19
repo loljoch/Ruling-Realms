@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     [SerializeField] private float fireballSpeed;
+    [SerializeField] private GameObject impactParticles;
     private Transform fireballParent;
     private Vector3 targetPosition;
     public Army target;
@@ -12,6 +13,7 @@ public class Fireball : MonoBehaviour
     private void Start()
     {
         fireballParent = transform.parent;
+        impactParticles.SetActive(false);
     }
 
     private void OnEnable()
@@ -37,13 +39,22 @@ public class Fireball : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, target.transform.GetChild(0).transform.position) < 3)
         {
+            impactParticles.SetActive(true);
             for (int i = 0; i < target.activeArmy.Count; i++)
             {
                 target.activeArmy[i].gameObject.SetActive(false);
             }
             target.activeArmy.Clear();
             StartCoroutine(target.Reset());
+            StartCoroutine(PoolFireball());
         }
+    }
+
+    IEnumerator PoolFireball()
+    {
+        yield return new WaitForSeconds(6);
+        impactParticles.SetActive(false);
+        ResetPositon();
     }
 
     public void ResetPositon()
