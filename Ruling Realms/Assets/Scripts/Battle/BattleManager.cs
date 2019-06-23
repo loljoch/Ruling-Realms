@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ChrisTutorials.Persistent;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -36,6 +37,10 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] Transform fireballParent;
     [SerializeField] SmokeFight smokeFight;
+    [SerializeField] private AudioClip trumpetClip;
+    [SerializeField] private AudioClip[] jokerClips;
+    [SerializeField] private AudioClip cheeringClip;
+
 
     private void Awake()
     {
@@ -63,6 +68,12 @@ public class BattleManager : MonoBehaviour
             fireballList.Add(fireball);
             fireball.ResetPositon();
         }
+    }
+
+    public void ManualCastleFocus(int playerIndex, Castle targetCastle)
+    {
+        targetedPlayer = playerIndex;
+        targetedCastle = targetCastle;
     }
 
     public int[] GetPlayers()
@@ -118,6 +129,7 @@ public class BattleManager : MonoBehaviour
                 {
                     tempValue = attackValue;
                 }
+                GameManager.Instance.playerList[playerIndex].army.armyCatergory = category;
                 attackingPlayers.Add(new PlayerAndValue(GameManager.Instance.playerList[playerIndex], tempValue));
             } else
             {
@@ -172,10 +184,7 @@ public class BattleManager : MonoBehaviour
             SpawnAttackingArmies(attackingPlayers[i]);
         }
 
-        for (int i = 0; i < defendingPlayer.Count; i++)
-        {
-            SpawnDefendingArmies(defendingPlayer[i]);
-        }
+        SpawnDefendingArmies(defendingPlayer);
 
         StartCoroutine(Battle());
     }
@@ -215,42 +224,67 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private void SpawnDefendingArmies(int value)
+    private void SpawnDefendingArmies(List<int> values)
     {
         Army currentArmy = GameManager.Instance.playerList[targetedPlayer].army;
+        List<int> deletedValues = new List<int>();
+        int bigValue = 0;
 
-        switch (value)
+        for (int i = 0; i < values.Count; i++)
         {
-            case 0:
-                currentArmy.SetArmyActive(currentArmy.jokers, 1, false);
-                break;
-            case 1:
-                currentArmy.SetArmyActive(currentArmy.bannerman, 1, false);
-                break;
-            case 2:
-                currentArmy.SetArmyActive(currentArmy.thiefs, 1, false);
-                break;
-            case 3:
-                currentArmy.SetArmyActive(currentArmy.priests, 1, false);
-                break;
-            case 7:
-                fireBalls++;
-                break;
-            default:
-                if (value >= 10)
-                {
-                    for (int i = 0; i < value; i += 10)
+            if(values[i] > 3 && values[i] != 7)
+            {
+                bigValue += values[i];
+                deletedValues.Add(values[i]);
+            }
+        }
+
+        for (int i = 0; i < deletedValues.Count; i++)
+        {
+            values.Remove(deletedValues[i]);
+        }
+
+        if(bigValue > 0)
+        {
+            values.Add(bigValue);
+        }
+
+        for (int w = 0; w < values.Count; w++)
+        {
+
+            switch (values[w])
+            {
+                case 0:
+                    currentArmy.SetArmyActive(currentArmy.jokers, 1, false);
+                    break;
+                case 1:
+                    currentArmy.SetArmyActive(currentArmy.bannerman, 1, false);
+                    break;
+                case 2:
+                    currentArmy.SetArmyActive(currentArmy.thiefs, 1, false);
+                    break;
+                case 3:
+                    currentArmy.SetArmyActive(currentArmy.priests, 1, false);
+                    break;
+                case 7:
+                    fireBalls++;
+                    break;
+                default:
+                    if (values[w] >= 10)
                     {
-                        if (value - i >= 10)
+                        for (int i = 0; i < values[w]; i += 10)
                         {
-                            currentArmy.SetArmyActive(currentArmy.ogres, 1, false);
+                            if (values[w] - i >= 10)
+                            {
+                                currentArmy.SetArmyActive(currentArmy.ogres, 1, false);
+                            }
                         }
                     }
-                }
 
-                currentArmy.SetArmyActive(currentArmy.soldiers, value % 10, false
-);
-                break;
+                    currentArmy.SetArmyActive(currentArmy.soldiers, values[w] % 10, false
+    );
+                    break;
+            }
         }
     }
 
@@ -337,6 +371,7 @@ public class BattleManager : MonoBehaviour
     {
         RevealArmies(true);
         yield return new WaitForSeconds(2);
+        AudioManager.Instance.SetVolume(AudioManager.AudioChannel.Music, 50);
         if (fireBalls > 0)
         {
             for (int i = 0; i < fireBalls; i++)
@@ -349,6 +384,7 @@ public class BattleManager : MonoBehaviour
 
         if (playedIndexWhoPlayedJoker.Count > 0)
         {
+            AudioManager.Instance.Play(jokerClips[Random.Range(0, jokerClips.Length)], transform, 0.6f);
             jokerMode = true;
             playedIndexWhoPlayedJoker = playedIndexWhoPlayedJoker.Distinct().ToList();
             switch (playedIndexWhoPlayedJoker.Count)
@@ -382,8 +418,9 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(2);
         }
         smokeFight.CalculateWinner();
-
-
+        AudioManager.Instance.Play(trumpetClip, transform, 0.1f);
+        smokeFight.audioSource.Play();
+        yield return new WaitForSeconds(1);
         MarchArmies(true);
     }
 
@@ -420,7 +457,7 @@ public class BattleManager : MonoBehaviour
         GameManager.Instance.StartNextTurn();
 
         MarchArmies(false);
-
+        AudioManager.Instance.Play(cheeringClip, transform, 0.2f);
         yield return new WaitForSeconds(0.5f);
 
         List<Army> fightingArmies = GetFightingArmies();
@@ -429,6 +466,7 @@ public class BattleManager : MonoBehaviour
             fightingArmies[i].MakeArmyLookAt(Camera.main.transform.position, "Cheering");
         }
 
+        smokeFight.audioSource.Stop();
         smokeFight.SetDustcloud(false);
 
         FireworkMachine fireworkMachine = FindObjectOfType<FireworkMachine>();
@@ -445,6 +483,7 @@ public class BattleManager : MonoBehaviour
         RevealArmies(false);
         ResetValues();
         yield return new WaitForSeconds(1);
+        AudioManager.Instance.SetVolume(AudioManager.AudioChannel.Music, 100);
         smokeFight.ResetValues();
     }
 

@@ -28,7 +28,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1872101, y: -7.8710575, z: 4.6671457}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1150904063049918640}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,6 +50,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  nextPlayerClip: {fileID: 8300000, guid: 192cee7f9252979419baa7754b72d6a1, type: 3}
+  castleDestroyClip: {fileID: 8300000, guid: 4b808573371a1904f86d4d9deeff813e, type: 3}
+  assignCategoryClip: {fileID: 8300000, guid: 728d876f07459344089a360f879c107a, type: 3}
+  bgMusic: {fileID: 8300000, guid: ecdb376494382b649a1967975a7871ea, type: 3}
 --- !u!114 &2429801315824474793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,3 +67,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireballParent: {fileID: 0}
+  smokeFight: {fileID: 0}
+  trumpetClip: {fileID: 8300000, guid: d8a2f9e40b94dd843bce948f47707233, type: 3}
+  jokerClips:
+  - {fileID: 8300000, guid: fc1ddb6504146e5499303d9f93c82e60, type: 3}
+  - {fileID: 8300000, guid: 29131ba84a8187346a2740d3bb163a61, type: 3}
+  cheeringClip: {fileID: 8300000, guid: d5ebeb9c24161704da6a9abd5447dc14, type: 3}
+--- !u!1 &5933828356442803357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150904063049918640}
+  - component: {fileID: 6047642150858992058}
+  m_Layer: 0
+  m_Name: InputHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150904063049918640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933828356442803357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2843730980559660433}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6047642150858992058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933828356442803357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb00a28281754f946aaf5e03a48c387d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

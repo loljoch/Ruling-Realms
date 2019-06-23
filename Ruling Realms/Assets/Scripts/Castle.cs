@@ -6,6 +6,7 @@ public class Castle : Category
 {
     public int fromPlayer;
     public int castleIndex;
+    private CastleBanner bannerman;
     [SerializeField] private float implodePower;
 
     public void AssignCastle(Player player, int castleIndex)
@@ -13,6 +14,8 @@ public class Castle : Category
         ColorBuildings(player.playerColor);
         fromPlayer = player.playerNumber;
         this.castleIndex = castleIndex;
+        bannerman = GetComponentInChildren<CastleBanner>();
+        bannerman.gameObject.SetActive(false);
     }
 
     private void ColorBuildings(Color32 color)
@@ -28,6 +31,14 @@ public class Castle : Category
                 }
             }
         }
+    }
+
+    public void ChangeCategory(int newCategory)
+    {
+        category = (categories)newCategory;
+        bannerman.ChangeToSymbol(newCategory);
+        bannerman.gameObject.SetActive(true);
+        bannerman.GetComponentInChildren<Animator>().SetBool("ShowFlag", true);
     }
 
     public IEnumerator Implode()

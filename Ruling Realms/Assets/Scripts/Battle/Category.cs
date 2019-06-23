@@ -7,10 +7,10 @@ public class Category : MonoBehaviour
     //names may change
     public enum categories
     {
-        One,
-        Two,
-        Three,
-        Four,
+        Cross,
+        Crown,
+        Castle,
+        Book,
         None
     }
 

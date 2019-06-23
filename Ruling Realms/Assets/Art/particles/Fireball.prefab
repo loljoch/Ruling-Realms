@@ -4985,6 +4985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireballSpeed: 2
   impactParticles: {fileID: 5904904708412495487}
+  fireBallClip: {fileID: 8300000, guid: 743ac114abdbddb479155cf5849e9984, type: 3}
   target: {fileID: 0}
 --- !u!1 &3191203509622969088
 GameObject:

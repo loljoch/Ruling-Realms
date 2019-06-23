@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ChrisTutorials.Persistent;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public List<Player> playerList;
 
     [SerializeField] private List<GameObject> playerItemList;
+    [SerializeField] private AudioClip nextPlayerClip;
+    [SerializeField] private AudioClip castleDestroyClip;
+    [SerializeField] private AudioClip assignCategoryClip;
+    [SerializeField] private AudioClip bgMusic;
 
     private CameraView camera;
 
@@ -40,14 +45,15 @@ public class GameManager : MonoBehaviour
     {
         playerList = new List<Player>();
         camera = Camera.main.GetComponent<CameraView>();
+        AudioManager.Instance.PlayLoop(bgMusic, transform, 0.3f, 1, true);
     }
 
-    public void AssignPlayer(Vector3 rgb, string playerName)
+    public void AssignPlayer(Color32 rgb, string playerName)
     {
 
         if (playerList.Count < maxPlayers)
         {
-            Color32 tempPlayerColor = new Color32((byte)rgb.x, (byte)rgb.y, (byte)rgb.z, 255);
+            Color32 tempPlayerColor = rgb;
             playerList.Add(new Player(tempPlayerColor, playerName, playerList.Count));
 
             if (UiManager.Instance.playersJoinedMenu.gameObject.activeSelf)
@@ -68,8 +74,8 @@ public class GameManager : MonoBehaviour
 
     //    if (playerList.Count < maxPlayers)
     //    {
-    //        Color32 tempPlayerColor = new Color32((byte)jsonClass.rgb[0], (byte)jsonClass.rgb[1], (byte)jsonClass.rgb[2], 255);
-    //        playerList.Add(new Player(tempPlayerColor, jsonClass.playerName, playerList.Count));
+    //        Color32 tempPlayerColor = new Color32((byte)jsonClass.color[0], (byte)jsonClass.color[1], (byte)jsonClass.color[2], 255);
+    //        playerList.Add(new Player(tempPlayerColor, jsonClass.name, playerList.Count));
 
     //        if (UiManager.Instance.playersJoinedMenu.gameObject.activeSelf)
     //        {
@@ -89,6 +95,9 @@ public class GameManager : MonoBehaviour
         {
             int castleIndex = 0;
             Transform[] tempItemArray = playerItemList[i].GetComponentsInChildren<Transform>();
+            playerList[i].playerNameUI = playerItemList[i].GetComponentInChildren<PlayerName>();
+            playerItemList[i].GetComponentInChildren<PlayerName>().AssignColor(playerList[i].playerColor, playerList[i].playerName);
+
             for (int w = 0; w < tempItemArray.Length; w++)
             {
                 if (tempItemArray[w].GetComponent<Castle>())
@@ -103,7 +112,7 @@ public class GameManager : MonoBehaviour
                     playerList[i].army = tempItemArray[w].GetComponent<Army>();
                     tempItemArray[w].GetComponent<Army>().fromPlayer = playerList[i].playerNumber;
                     break;
-                }
+                } 
             }
         }
     }
@@ -117,6 +126,8 @@ public class GameManager : MonoBehaviour
 
     private void SetCameraToPlayer(Transform targetView)
     {
+        AudioManager.Instance.Play(nextPlayerClip, transform, 0.2f);
+        currentPlayer.playerNameUI.gameObject.SetActive(false);
         camera.enabled = true;
         camera.targetView = targetView;
     }
@@ -139,6 +150,13 @@ public class GameManager : MonoBehaviour
 
     public int[] StartNextTurn(int cardDrawNumber = 1)
     {
+        try
+        {
+            currentPlayer.playerNameUI.gameObject.SetActive(true);
+        } catch (System.NullReferenceException)
+        {
+        }
+
         currentPlayer = (currentPlayer == nextPlayer || nextPlayer == null)? CalculateNextPlayer() : nextPlayer;
         nextPlayer = currentPlayer;
         UiManager.Instance.BroadCastMessage(currentPlayer.playerName + " may rule their realm", 3, currentPlayer.playerColor);
@@ -149,6 +167,7 @@ public class GameManager : MonoBehaviour
 
     public void DestroyCastle(Castle castle)
     {
+        AudioManager.Instance.Play(castleDestroyClip, transform, 0.3f);
         playerList[castle.fromPlayer].castleList.Remove(castle);
         StartCoroutine(castle.Implode());
         if(playerList[castle.fromPlayer].castleList.Count <= 0)
@@ -171,7 +190,22 @@ public class GameManager : MonoBehaviour
 
     public void AssignCategory(int category)
     {
-        //assigns castle category to a random current player
+        AudioManager.Instance.Play(assignCategoryClip, transform, 0.1f);
+        bool noAvailableCastle = true;
+        for (int i = 0; i < currentPlayer.castleList.Count; i++)
+        {
+            if(currentPlayer.castleList[i].category == (Category.categories)4)
+            {
+                currentPlayer.castleList[i].ChangeCategory(category);
+                noAvailableCastle = false;
+                break;
+            }
+        }
+
+        if (noAvailableCastle)
+        {
+            currentPlayer.castleList[0].ChangeCategory(category);
+        }
     }
 
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ChrisTutorials.Persistent;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class Fireball : MonoBehaviour
 {
     [SerializeField] private float fireballSpeed;
     [SerializeField] private GameObject impactParticles;
+    [SerializeField] private AudioClip fireBallClip;
     private Transform fireballParent;
     private Vector3 targetPosition;
     public Army target;
@@ -21,6 +23,7 @@ public class Fireball : MonoBehaviour
         try
         {
             targetPosition = new Vector3(target.transform.GetChild(0).transform.position.x, target.transform.GetChild(0).transform.position.y - 6, target.transform.GetChild(0).transform.position.z);
+            AudioManager.Instance.Play(fireBallClip, transform, 0.1f);
         } catch (System.NullReferenceException)
         {
         }

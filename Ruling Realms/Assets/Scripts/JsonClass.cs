@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JsonClass : MonoBehaviour
+[System.Serializable]
+public class JsonClass
 {
-    public string playerName;
-    public int[] rgb;
+    public string name;
+    public int[] color;
 }

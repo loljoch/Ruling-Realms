@@ -5,6 +5,7 @@ using UnityEngine;
 public class Army : MonoBehaviour
 {
     public int fromPlayer;
+    public int armyCatergory;
     [SerializeField] private float marchTime;
     private int currentPositionTaken;
     public Animator animator;
@@ -17,6 +18,7 @@ public class Army : MonoBehaviour
 
     private void Start()
     {
+        armyCatergory = 4;
         originalPosition = transform.position;
         animator = GetComponent<Animator>();
 
@@ -97,10 +99,18 @@ public class Army : MonoBehaviour
     {
         animator.SetBool("Revealed", true);
         StartCoroutine(SetRigidBodies(true));
+        if(armyCatergory != 4)
+        {
+            for (int i = 0; i < bannerman.Count; i++)
+            {
+                bannerman[i].GetComponent<Bannerman>().ChangeToSymbol(armyCatergory);
+            }
+        }
     }
 
     public IEnumerator Reset()
     {
+        armyCatergory = 4;
         ActivateRigidbodies(false);
         animator.SetBool("Revealed", false);
         yield return new WaitForSeconds(3);

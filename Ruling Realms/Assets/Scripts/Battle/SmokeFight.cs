@@ -8,10 +8,12 @@ public class SmokeFight : MonoBehaviour
     private int defendingArmyValue;
     private int attackingArmyValue;
     private ParticleSystem[] dustCloud;
+    public AudioSource audioSource;
 
     private void Start()
     {
         dustCloud = GetComponentsInChildren<ParticleSystem>();
+        audioSource = GetComponent<AudioSource>();
         SetDustcloud(false);
     }
 
@@ -53,7 +55,7 @@ public class SmokeFight : MonoBehaviour
             if (fightingArmies[i].activeArmy[0].attacking)
             {
                 attackingArmyValue += fightingArmies[i].GetArmyStrength();
-            } else if (fightingArmies[i].activeArmy[0].attacking)
+            } else if (!fightingArmies[i].activeArmy[0].attacking)
             {
                 defendingArmyValue += fightingArmies[i].GetArmyStrength();
             }
